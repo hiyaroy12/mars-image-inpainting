@@ -52,4 +52,4 @@ python metrics.py --data-path [path to validation set] --output-path [path to mo
 ```
 
 ## Acknowledgments
-This code is inspired from [EdgeConnect](https://github.com/knazeri/edge-connect)
+This code is inspired from [EdgeConnect.](https://github.com/knazeri/edge-connect)

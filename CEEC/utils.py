@@ -21,25 +21,9 @@ from sklearn.utils.validation import check_random_state
 def read_file(filename):
     return [line.rstrip('\n') for line in open(filename)]
 
-#######################################################
 ##############Loading HIRISE dataset###################
-#######################################################
+
 class MyHirise(CelebA):
-    
-#     corrupted_filenames = {'all': '/home3/hiya/workspace/mars_image_inpainting/data/allfiles_corrupted.txt',
-#                             '0': '/home3/hiya/workspace/mars_image_inpainting/data/corrupted_files_cluster_0.txt',
-#                             '1': '/home3/hiya/workspace/mars_image_inpainting/data/corrupted_files_cluster_1.txt',
-#                             '2': '/home3/hiya/workspace/mars_image_inpainting/data/corrupted_files_cluster_2.txt',
-#                             '3': '/home3/hiya/workspace/mars_image_inpainting/data/corrupted_files_cluster_3.txt',
-#                             '4': '/home3/hiya/workspace/mars_image_inpainting/data/corrupted_files_cluster_4.txt'}
-    
-#     clean_filenames =     { 'all': '/home3/hiya/workspace/mars_image_inpainting/data/allfiles_clean.txt',
-#                             '0': '/home3/hiya/workspace/mars_image_inpainting/data/clean_files_cluster_0.txt',
-#                             '1': '/home3/hiya/workspace/mars_image_inpainting/data/clean_files_cluster_1.txt',
-#                             '2': '/home3/hiya/workspace/mars_image_inpainting/data/clean_files_cluster_2.txt',
-#                             '3': '/home3/hiya/workspace/mars_image_inpainting/data/clean_files_cluster_3.txt',
-#                             '4': '/home3/hiya/workspace/mars_image_inpainting/data/clean_files_cluster_4.txt'}
-    
     corrupted_filenames = {'all': './data/allfiles_corrupted.txt',
                             '0': './data/corrupted_files_cluster_0.txt',
                             '1': './data/corrupted_files_cluster_1.txt',
@@ -79,4 +63,3 @@ class MyHirise(CelebA):
         if self.transform is not None:
             X = self.transform(X)
         return X, self.filenames[index]
-    

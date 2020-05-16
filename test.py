@@ -149,8 +149,3 @@ for i, (imgs, _) in enumerate(test_loader):
 
 print('Avg PSNR: ', np.mean(psnr_list))
 print('Avg MAE: ', np.mean(mae_list))
-    
-
-     
-    
-    

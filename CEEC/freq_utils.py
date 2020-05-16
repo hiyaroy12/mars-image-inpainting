@@ -35,4 +35,3 @@ def get_hirise_masked(x_im, mask_split='train'):
     x_masked_parts = product_mask(x_im, (1 - all_masks))
     
     return x_masked, x_masked_parts, all_masks
-

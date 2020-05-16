@@ -109,6 +109,3 @@ for epoch in range(opt.n_epochs):
     
     torch.save(model.generator.state_dict(),"l1_adv_results/{}{}_generator.h5f".format(prefix, opt.dataset))
     torch.save(model.discriminator.state_dict(),"l1_adv_results/{}{}_discriminator.h5f".format(prefix, opt.dataset))
-     
-    
-    

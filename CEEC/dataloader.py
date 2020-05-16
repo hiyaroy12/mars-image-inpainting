@@ -40,8 +40,6 @@ def get_data_loader(opt):
     
     return loader_train, test_loader
 
-#################################################################################################################
-
 def get_data_loader_corrupted(opt):
     print('Loading dataset ...\n')
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
